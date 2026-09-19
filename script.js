@@ -389,6 +389,33 @@ function finishTournament() {
         `${state.history.length} confronti effettuati`;
 }
 
+function getTopResults(count) {
+
+    const standings = getStandings();
+
+    const limit = Math.min(count, standings.length);
+
+    return standings
+        .slice(0, limit)
+        .map((film, index) => {
+            return `${index + 1}. ${film.title}`;
+        })
+        .join("\n");
+}
+
+$("#copy-top-results").onclick = async function() {
+
+    const count = Number($("#top-count").value);
+
+    if (!Number.isInteger(count) || count < 1) {
+        return;
+    }
+
+    const results = getTopResults(count);
+
+    await navigator.clipboard.writeText(results);
+};
+
 function escapeHtml(value) {
     return value
         .replaceAll("&", "&amp;")

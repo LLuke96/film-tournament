@@ -130,6 +130,7 @@
 
             </section>
 
+            <!-- Sezione visualizzata a torneo concluso -->
             <section id="final" class="final" hidden>
 
                 <p class="eyebrow">TORNEO COMPLETATO</p>
@@ -156,10 +157,28 @@
                     Nuovo torneo
                 </button>
 
+                <div class="top-results">
+                    <label for="top-count">Mostra i primi</label>
+
+                    <input
+                        type="number"
+                        id="top-count"
+                        min="1"
+                        value="10"
+                    >
+
+                    <span>titoli</span>
+
+                    <button id="copy-top-results">
+                        Copia classifica
+                    </button>
+                </div>
+
             </section>
 
         </main>
 
+        <!-- Popup info aggiuntive dei film -->
         <div id="film-modal" class="film-modal" hidden>
 
             <div class="film-modal-content">
