@@ -129,7 +129,7 @@
 
     {
         "Id": 9,
-        "include": true,
+        "include": false,
         "title": "Big Hero 6",
         "originalTitle": "Big Hero 6",
         "year": 2014,
@@ -145,7 +145,7 @@
 
     {
         "Id": 10,
-        "include": true,
+        "include": false,
         "title": "Toy Story",
         "originalTitle": "Toy Story",
         "year": 1995,
@@ -161,7 +161,7 @@
 
     {
         "Id": 11,
-        "include": true,
+        "include": false,
         "title": "Wall-E",
         "originalTitle": "WALL-E",
         "year": 2008,
@@ -177,7 +177,7 @@
 
     {
         "Id": 12,
-        "include": true,
+        "include": false,
         "title": "Coco",
         "originalTitle": "Coco",
         "year": 2017,
@@ -193,7 +193,7 @@
 
     {
         "Id": 13,
-        "include": true,
+        "include": false,
         "title": "Inside Out 2",
         "originalTitle": "Inside Out 2",
         "year": 2024,
@@ -209,7 +209,7 @@
 
     {
         "Id": 14,
-        "include": true,
+        "include": false,
         "title": "La Strada per El Dorado",
         "originalTitle": "The Road to El Dorado",
         "year": 2000,
@@ -225,7 +225,7 @@
 
     {
         "Id": 15,
-        "include": true,
+        "include": false,
         "title": "Shrek",
         "originalTitle": "Shrek",
         "year": 2001,
@@ -241,7 +241,7 @@
 
     {
         "Id": 16,
-        "include": true,
+        "include": false,
         "title": "Dragon Trainer",
         "originalTitle": "How to Train Your Dragon",
         "year": 2010,
@@ -257,7 +257,7 @@
 
     {
         "Id": 17,
-        "include": true,
+        "include": false,
         "title": "Il Gatto con gli Stivali 2",
         "originalTitle": "Puss in Boots: The Last Wish",
         "year": 2022,
@@ -273,7 +273,7 @@
 
     {
         "Id": 18,
-        "include": true,
+        "include": false,
         "title": "Il Robot Selvaggio",
         "originalTitle": "The Wild Robot",
         "year": 2024,
@@ -289,7 +289,7 @@
 
     {
         "Id": 19,
-        "include": true,
+        "include": false,
         "title": "La Gabbianella e il Gatto",
         "originalTitle": "La gabbianella e il gatto",
         "year": 1998,
@@ -305,7 +305,7 @@
 
     {
         "Id": 20,
-        "include": true,
+        "include": false,
         "title": "Il Castello Errante di Howl",
         "originalTitle": "Howl's Moving Castle",
         "year": 2004,
@@ -321,7 +321,7 @@
 
     {
         "Id": 21,
-        "include": true,
+        "include": false,
         "title": "The Mitchells vs. The Machines",
         "originalTitle": "The Mitchells vs. the Machines",
         "year": 2021,
@@ -342,7 +342,7 @@
 
     {
         "Id": 22,
-        "include": true,
+        "include": false,
         "title": "Il Re Leone",
         "originalTitle": "The Lion King",
         "year": 1994,
@@ -358,7 +358,7 @@
 
     {
         "Id": 23,
-        "include": true,
+        "include": false,
         "title": "Il Gigante di Ferro",
         "originalTitle": "The Iron Giant",
         "year": 1999,
@@ -374,7 +374,7 @@
 
     {
         "Id": 24,
-        "include": true,
+        "include": false,
         "title": "Spider-Man: Un nuovo universo",
         "originalTitle": "Spider-Man: Into the Spider-Verse",
         "year": 2018,
@@ -399,7 +399,7 @@
 
     {
         "Id": 25,
-        "include": true,
+        "include": false,
         "title": "Gli Incredibili",
         "originalTitle": "The Incredibles",
         "year": 2004,
@@ -415,7 +415,7 @@
 
     {
         "Id": 26,
-        "include": true,
+        "include": false,
         "title": "Alla Ricerca di Nemo",
         "originalTitle": "Finding Nemo",
         "year": 2003,
@@ -431,7 +431,7 @@
 
     {
         "Id": 27,
-        "include": true,
+        "include": false,
         "title": "Your Name",
         "originalTitle": "Kimi no Na wa.",
         "year": 2016,
@@ -452,7 +452,7 @@
 
     {
         "Id": 28,
-        "include": true,
+        "include": false,
         "title": "Nimona",
         "originalTitle": "Nimona",
         "year": 2023,
@@ -472,7 +472,7 @@
 
     {
         "Id": 29,
-        "include": true,
+        "include": false,
         "title": "Robots",
         "originalTitle": "Robots",
         "year": 2005,
@@ -513,7 +513,7 @@
 
     {
         "Id": 31,
-        "include": true,
+        "include": false,
         "title": "Aladdin",
         "originalTitle": "Aladdin",
         "year": 1992,
@@ -529,7 +529,7 @@
 
     {
         "Id": 32,
-        "include": true,
+        "include": false,
         "title": "Nightmare Before Christmas",
         "originalTitle": "The Nightmare Before Christmas",
         "year": 1993,
@@ -548,7 +548,7 @@
 
     {
         "Id": 33,
-        "include": true,
+        "include": false,
         "title": "Z la formica",
         "originalTitle": "Antz",
         "year": 1998,
