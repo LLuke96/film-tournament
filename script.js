@@ -39,7 +39,7 @@ function getBeatenTitles(prm) {
 
     const beatenTitles = [...film.beats]
         .map(beatenId => getFilmById(beatenId).title);
-        
+
     return beatenTitles;
 }
 
@@ -204,26 +204,39 @@ function rebuildTransitiveRelations() {
 function getNextComparison() {
     const pairs = getIncomparablePairs();
 
-    if (pairs.length === 0) { return null; }
+    if (pairs.length === 0) {
+        return null;
+    }
 
-    /*
-     * Preferiamo coppie che sembrano vicine
-     * nella classifica attuale.
-     *
-     * beats.size rappresenta quanti film
-     * abbiamo già dimostrato essere inferiori.
-     */
     pairs.sort((pairA, pairB) => {
-        const [filmA1, filmB1] = pairA;
-        const [filmA2, filmB2] = pairB;
+        const distanceA =
+            Math.abs(pairA[0].beats.size - pairA[1].beats.size);
 
-        const distance1 = Math.abs(filmA1.beats.size - filmB1.beats.size);
-        const distance2 = Math.abs(filmA2.beats.size - filmB2.beats.size);
+        const distanceB =
+            Math.abs(pairB[0].beats.size - pairB[1].beats.size);
 
-        return distance1 - distance2;
+        return distanceA - distanceB;
     });
 
-    return pairs[0];
+    const bestDistance =
+        Math.abs(pairs[0][0].beats.size - pairs[0][1].beats.size);
+
+    const bestPairs = [];
+
+    for (const pair of pairs) {
+        const distance =
+            Math.abs(pair[0].beats.size - pair[1].beats.size);
+
+        if (distance !== bestDistance) {
+            break;
+        }
+
+        bestPairs.push(pair);
+    }
+
+    return bestPairs[
+        Math.floor(Math.random() * bestPairs.length)
+    ];
 }
 
 function getStandings() {
