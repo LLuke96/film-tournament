@@ -64,8 +64,10 @@ async function init() {
     
     state.films = FILMS
         .filter(film => film.include)
-        .map(film => ({
+        .map((film, index) => ({
             ...film,
+
+            Id: index + 1,
             wins: 0,
             losses: 0,
             

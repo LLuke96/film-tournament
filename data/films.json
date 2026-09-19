@@ -1,6 +1,5 @@
 [
     {
-        "Id": 1,
         "include": true,
         "title": "Il Pianeta del Tesoro",
         "originalTitle": "Treasure Planet",
@@ -16,7 +15,6 @@
     },
 
     {
-        "Id": 2,
         "include": true,
         "title": "Atlantis",
         "originalTitle": "Atlantis: The Lost Empire",
@@ -32,7 +30,6 @@
     },
 
     {
-        "Id": 3,
         "include": true,
         "title": "Lilo & Stitch",
         "originalTitle": "Lilo & Stitch",
@@ -48,7 +45,6 @@
     },
 
     {
-        "Id": 4,
         "include": true,
         "title": "Koda Fratello Orso",
         "originalTitle": "Brother Bear",
@@ -64,7 +60,6 @@
     },
 
     {
-        "Id": 5,
         "include": true,
         "title": "Hercules",
         "originalTitle": "Hercules",
@@ -80,7 +75,6 @@
     },
 
     {
-        "Id": 6,
         "include": true,
         "title": "Tarzan",
         "originalTitle": "Tarzan",
@@ -96,7 +90,6 @@
     },
 
     {
-        "Id": 7,
         "include": true,
         "title": "Le Follie dell'Imperatore",
         "originalTitle": "The Emperor's New Groove",
@@ -112,7 +105,6 @@
     },
 
     {
-        "Id": 8,
         "include": true,
         "title": "Robinson",
         "originalTitle": "Meet the Robinsons",
@@ -128,7 +120,6 @@
     },
 
     {
-        "Id": 9,
         "include": false,
         "title": "Big Hero 6",
         "originalTitle": "Big Hero 6",
@@ -144,7 +135,6 @@
     },
 
     {
-        "Id": 10,
         "include": false,
         "title": "Toy Story",
         "originalTitle": "Toy Story",
@@ -160,7 +150,6 @@
     },
 
     {
-        "Id": 11,
         "include": false,
         "title": "Wall-E",
         "originalTitle": "WALL-E",
@@ -176,7 +165,6 @@
     },
 
     {
-        "Id": 12,
         "include": false,
         "title": "Coco",
         "originalTitle": "Coco",
@@ -192,7 +180,6 @@
     },
 
     {
-        "Id": 13,
         "include": false,
         "title": "Inside Out 2",
         "originalTitle": "Inside Out 2",
@@ -208,7 +195,6 @@
     },
 
     {
-        "Id": 14,
         "include": false,
         "title": "La Strada per El Dorado",
         "originalTitle": "The Road to El Dorado",
@@ -224,7 +210,6 @@
     },
 
     {
-        "Id": 15,
         "include": false,
         "title": "Shrek",
         "originalTitle": "Shrek",
@@ -240,7 +225,6 @@
     },
 
     {
-        "Id": 16,
         "include": false,
         "title": "Dragon Trainer",
         "originalTitle": "How to Train Your Dragon",
@@ -256,7 +240,6 @@
     },
 
     {
-        "Id": 17,
         "include": false,
         "title": "Il Gatto con gli Stivali 2",
         "originalTitle": "Puss in Boots: The Last Wish",
@@ -272,7 +255,6 @@
     },
 
     {
-        "Id": 18,
         "include": false,
         "title": "Il Robot Selvaggio",
         "originalTitle": "The Wild Robot",
@@ -288,7 +270,6 @@
     },
 
     {
-        "Id": 19,
         "include": false,
         "title": "La Gabbianella e il Gatto",
         "originalTitle": "La gabbianella e il gatto",
@@ -304,7 +285,6 @@
     },
 
     {
-        "Id": 20,
         "include": false,
         "title": "Il Castello Errante di Howl",
         "originalTitle": "Howl's Moving Castle",
@@ -320,7 +300,6 @@
     },
 
     {
-        "Id": 21,
         "include": false,
         "title": "The Mitchells vs. The Machines",
         "originalTitle": "The Mitchells vs. the Machines",
@@ -341,7 +320,6 @@
     },
 
     {
-        "Id": 22,
         "include": false,
         "title": "Il Re Leone",
         "originalTitle": "The Lion King",
@@ -357,7 +335,6 @@
     },
 
     {
-        "Id": 23,
         "include": false,
         "title": "Il Gigante di Ferro",
         "originalTitle": "The Iron Giant",
@@ -373,7 +350,6 @@
     },
 
     {
-        "Id": 24,
         "include": false,
         "title": "Spider-Man: Un nuovo universo",
         "originalTitle": "Spider-Man: Into the Spider-Verse",
@@ -398,7 +374,6 @@
     },
 
     {
-        "Id": 25,
         "include": false,
         "title": "Gli Incredibili",
         "originalTitle": "The Incredibles",
@@ -414,7 +389,6 @@
     },
 
     {
-        "Id": 26,
         "include": false,
         "title": "Alla Ricerca di Nemo",
         "originalTitle": "Finding Nemo",
@@ -430,7 +404,6 @@
     },
 
     {
-        "Id": 27,
         "include": false,
         "title": "Your Name",
         "originalTitle": "Kimi no Na wa.",
@@ -451,7 +424,6 @@
     },
 
     {
-        "Id": 28,
         "include": false,
         "title": "Nimona",
         "originalTitle": "Nimona",
@@ -471,7 +443,6 @@
     },
 
     {
-        "Id": 29,
         "include": false,
         "title": "Robots",
         "originalTitle": "Robots",
@@ -490,7 +461,6 @@
     },
 
     {
-        "Id": 30,
         "include": false,
         "title": "The LEGO Movie",
         "originalTitle": "The Lego Movie",
@@ -512,7 +482,6 @@
     },
 
     {
-        "Id": 31,
         "include": false,
         "title": "Aladdin",
         "originalTitle": "Aladdin",
@@ -528,7 +497,6 @@
     },
 
     {
-        "Id": 32,
         "include": false,
         "title": "Nightmare Before Christmas",
         "originalTitle": "The Nightmare Before Christmas",
@@ -547,7 +515,6 @@
     },
 
     {
-        "Id": 33,
         "include": false,
         "title": "Z la formica",
         "originalTitle": "Antz",
@@ -564,5 +531,285 @@
         "animation": "CGI",
         "genres": ["Commedia", "Avventura", "Satira"],
         "source": "Originale"
+    },
+    {
+        "title": "Zootropolis",
+        "originalTitle": "Zootopia",
+        "year": 2016,
+        "studio": "Walt Disney Animation Studios",
+        "productionCompanies": ["Walt Disney Animation Studios"],
+        "country": ["Stati Uniti"],
+        "director": ["Byron Howard", "Rich Moore"],
+        "runtime": 108,
+        "animation": "Animazione 3D",
+        "genres": ["Commedia", "Avventura", "Mistero"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Anastasia",
+        "originalTitle": "Anastasia",
+        "year": 1997,
+        "studio": "Fox Animation Studios",
+        "productionCompanies": ["Fox Family Films", "Fox Animation Studios", "The Big Gun Project"],
+        "country": ["Stati Uniti"],
+        "director": ["Don Bluth", "Gary Goldman"],
+        "runtime": 94,
+        "animation": "Animazione tradizionale",
+        "genres": ["Musicale", "Storico", "Fantasy", "Avventura"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Galline in fuga",
+        "originalTitle": "Chicken Run",
+        "year": 2000,
+        "studio": "Aardman Animations",
+        "productionCompanies": ["Aardman Animations", "Pathé", "DreamWorks Animation"],
+        "country": ["Regno Unito", "Francia", "Stati Uniti"],
+        "director": ["Peter Lord", "Nick Park"],
+        "runtime": 84,
+        "animation": "Stop motion",
+        "genres": ["Commedia", "Avventura", "Azione"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Kung Fu Panda",
+        "originalTitle": "Kung Fu Panda",
+        "year": 2008,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation", "Dragon Warrior Media"],
+        "country": ["Stati Uniti", "Cina"],
+        "director": ["John Stevenson", "Mark Osborne"],
+        "runtime": 92,
+        "animation": "Animazione 3D",
+        "genres": ["Commedia", "Avventura", "Azione", "Arti marziali"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Madagascar",
+        "originalTitle": "Madagascar",
+        "year": 2005,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation", "PDI/DreamWorks"],
+        "country": ["Stati Uniti"],
+        "director": ["Eric Darnell", "Tom McGrath"],
+        "runtime": 86,
+        "animation": "Animazione 3D",
+        "genres": ["Commedia", "Avventura", "Famiglia"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Megamind",
+        "originalTitle": "Megamind",
+        "year": 2010,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation", "PDI/DreamWorks"],
+        "country": ["Stati Uniti"],
+        "director": ["Tom McGrath"],
+        "runtime": 96,
+        "animation": "Animazione 3D",
+        "genres": ["Commedia", "Supereroi", "Azione", "Fantascienza"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Le 5 Leggende",
+        "originalTitle": "Rise of the Guardians",
+        "year": 2012,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation", "Pacific Data Images"],
+        "country": ["Stati Uniti"],
+        "director": ["Peter Ramsey"],
+        "runtime": 97,
+        "animation": "Animazione 3D",
+        "genres": ["Fantasy", "Avventura", "Azione", "Commedia"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Turbo",
+        "originalTitle": "Turbo",
+        "year": 2013,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation", "DreamWorks Animation India"],
+        "country": ["Stati Uniti"],
+        "director": ["David Soren"],
+        "runtime": 96,
+        "animation": "Animazione 3D",
+        "genres": ["Commedia", "Avventura", "Sport"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Trolls",
+        "originalTitle": "Trolls",
+        "year": 2016,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation"],
+        "country": ["Stati Uniti"],
+        "director": ["Mike Mitchell", "Walt Dohrn"],
+        "runtime": 92,
+        "animation": "Animazione 3D",
+        "genres": ["Musicale", "Commedia", "Fantasy", "Avventura"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Sonic - Il film",
+        "originalTitle": "Sonic the Hedgehog",
+        "year": 2020,
+        "studio": "Paramount Pictures",
+        "productionCompanies": ["Original Film", "Marza Animation Planet", "Blur Studio"],
+        "country": ["Stati Uniti", "Giappone"],
+        "director": ["Jeff Fowler"],
+        "runtime": 99,
+        "animation": "Live action / CGI",
+        "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Sonic 2 - Il film",
+        "originalTitle": "Sonic the Hedgehog 2",
+        "year": 2022,
+        "studio": "Paramount Pictures",
+        "productionCompanies": ["Original Film", "Marza Animation Planet", "Blur Studio"],
+        "country": ["Stati Uniti", "Giappone"],
+        "director": ["Jeff Fowler"],
+        "runtime": 122,
+        "animation": "Live action / CGI",
+        "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Sonic 3 - Il film",
+        "originalTitle": "Sonic the Hedgehog 3",
+        "year": 2024,
+        "studio": "Paramount Pictures",
+        "productionCompanies": ["Original Film", "Marza Animation Planet", "Blur Studio"],
+        "country": ["Stati Uniti", "Giappone"],
+        "director": ["Jeff Fowler"],
+        "runtime": 110,
+        "animation": "Live action / CGI",
+        "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Cappuccetto rosso e gli insoliti sospetti",
+        "originalTitle": "Hoodwinked!",
+        "year": 2005,
+        "studio": "Kanbar Entertainment",
+        "productionCompanies": ["Kanbar Entertainment", "Kanbar Animation", "Blue Yonder Films"],
+        "country": ["Stati Uniti"],
+        "director": ["Cory Edwards"],
+        "runtime": 81,
+        "animation": "Animazione 3D",
+        "genres": ["Commedia", "Musicale", "Mistero", "Avventura"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Ratatouille",
+        "originalTitle": "Ratatouille",
+        "year": 2007,
+        "studio": "Pixar Animation Studios",
+        "productionCompanies": ["Pixar Animation Studios", "Walt Disney Pictures"],
+        "country": ["Stati Uniti", "Francia"],
+        "director": ["Brad Bird"],
+        "runtime": 111,
+        "animation": "Animazione 3D",
+        "genres": ["Commedia", "Avventura", "Drammatico"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "La Bella e la Bestia",
+        "originalTitle": "Beauty and the Beast",
+        "year": 1991,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Feature Animation"],
+        "country": ["Stati Uniti"],
+        "director": ["Gary Trousdale", "Kirk Wise"],
+        "runtime": 84,
+        "animation": "Animazione tradizionale",
+        "genres": ["Musicale", "Fantasy", "Romantico"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "La città incantata",
+        "originalTitle": "Sen to Chihiro no kamikakushi",
+        "year": 2001,
+        "studio": "Studio Ghibli",
+        "productionCompanies": ["Studio Ghibli", "Tokuma Shoten", "Nippon Television Network"],
+        "country": ["Giappone"],
+        "director": ["Hayao Miyazaki"],
+        "runtime": 124,
+        "animation": "Animazione tradizionale",
+        "genres": ["Fantasy", "Avventura", "Drammatico"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Wallace & Gromit: La maledizione del coniglio mannaro",
+        "originalTitle": "Wallace & Gromit: The Curse of the Were-Rabbit",
+        "year": 2005,
+        "studio": "Aardman Animations",
+        "productionCompanies": ["Aardman Animations", "DreamWorks Animation"],
+        "country": ["Regno Unito", "Stati Uniti"],
+        "director": ["Nick Park", "Steve Box"],
+        "runtime": 85,
+        "animation": "Stop motion",
+        "genres": ["Commedia", "Avventura", "Mistero"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "Mulan",
+        "originalTitle": "Mulan",
+        "year": 1998,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Feature Animation", "Walt Disney Feature Animation Florida"],
+        "country": ["Stati Uniti"],
+        "director": ["Barry Cook", "Tony Bancroft"],
+        "runtime": 87,
+        "animation": "Animazione tradizionale",
+        "genres": ["Musicale", "Avventura", "Azione", "Commedia"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "La Principessa e il Ranocchio",
+        "originalTitle": "The Princess and the Frog",
+        "year": 2009,
+        "studio": "Walt Disney Animation Studios",
+        "productionCompanies": ["Walt Disney Animation Studios"],
+        "country": ["Stati Uniti"],
+        "director": ["John Musker", "Ron Clements"],
+        "runtime": 97,
+        "animation": "Animazione tradizionale",
+        "genres": ["Musicale", "Fantasy", "Romantico", "Commedia"],
+        "source": "IMDb",
+        "include": true
+    },
+    {
+        "title": "La Sirenetta",
+        "originalTitle": "The Little Mermaid",
+        "year": 1989,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Feature Animation", "Silver Screen Partners IV"],
+        "country": ["Stati Uniti"],
+        "director": ["John Musker", "Ron Clements"],
+        "runtime": 83,
+        "animation": "Animazione tradizionale",
+        "genres": ["Musicale", "Fantasy", "Romantico", "Avventura"],
+        "source": "IMDb",
+        "include": true
     }
 ]
