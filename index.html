@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 
 <html lang="it">
@@ -16,7 +17,7 @@
                 <h1>Film Animation Battle</h1>
                 <p class="subtitle">
                     Scegli il vincitore di ogni confronto. Il sistema aggiorna
-                    automaticamente record, pairing e classifica.
+                    automaticamente pairing e classifica.
                 </p>
             </header>
 
@@ -26,9 +27,16 @@
 
                 <div class="topbar">
                     <div>
-                        <strong id="round"></strong>
+                        <strong>Ranking Film Definitiva</strong>
                         <span id="match-counter"></span>
                     </div>
+
+                    <button
+                        id="undo-comparison"
+                        class="info-button"
+                        type="button">
+                        Annulla ultimo confronto
+                    </button>
 
                     <button class="secondary" onclick="resetTournament()">
                         Ricomincia
@@ -115,7 +123,7 @@
 
                     <div class="section-title">
                         <h2>Classifica</h2>
-                        <span>Ordinata per record</span>
+                        <span>Ordinata per posizione</span>
                     </div>
 
                     <div class="table-wrap">
@@ -124,9 +132,8 @@
                             <tr>
                                 <th>#</th>
                                 <th>Film</th>
-                                <th>Record</th>
-                                <th>V</th>
-                                <th>S</th>
+                                <th>Sopra</th>
+                                <th>Sotto</th>
                             </tr>
                             </thead>
 
@@ -159,7 +166,10 @@
 
                     <span>titoli</span>
 
-                    <button id="copy-top-results" class="info-button" type="button">
+                    <button
+                        id="copy-top-results"
+                        class="info-button"
+                        type="button">
                         Copia classifica
                     </button>
                 </div>
@@ -170,7 +180,8 @@
                         <tr>
                             <th>#</th>
                             <th>Film</th>
-                            <th>Record</th>
+                            <th>Sopra</th>
+                            <th>Sotto</th>
                         </tr>
                         </thead>
 

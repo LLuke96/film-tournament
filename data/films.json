@@ -447,7 +447,7 @@
         "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
         "source": "IMDb",
         "src": "./src/posters/sonic_the_hedgehog.jpg",
-        "include": true
+        "include": false
     },
     {
         "title": "Sonic 2 - Il film",
@@ -462,7 +462,7 @@
         "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
         "source": "IMDb",
         "src": "./src/posters/sonic_the_hedgehog_2.jpg",
-        "include": true
+        "include": false
     },
     {
         "title": "Sonic 3 - Il film",
@@ -477,7 +477,7 @@
         "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
         "source": "IMDb",
         "src": "./src/posters/sonic_the_hedgehog_3.jpg",
-        "include": true
+        "include": false
     },
     {
         "title": "Spider-Man: Un nuovo universo",

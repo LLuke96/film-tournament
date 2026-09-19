@@ -363,7 +363,6 @@ th:first-child {
         border-color 0.2s ease,
         transform 0.1s ease;
 }
-
 .info-button:hover {
     background: #5dade2;
     border-color: #3498db;
@@ -371,9 +370,18 @@ th:first-child {
 
     transform: translateY(-1px);
 }
-
 .info-button:active {
     transform: translateY(0);
+}
+.info-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+.info-button:disabled:hover {
+    background: #eaf5fc;
+    border-color: #5dade2;
+    color: #2874a6;
 }
 
 .film-modal {

@@ -67,10 +67,6 @@ function getIncomparablePairs() {
     return pairs;
 }
 
-function recordOf(film) {
-    return `${film.wins}-${film.losses}`;
-}
-
 async function init() {
     
     let FILMS = [];
@@ -88,8 +84,6 @@ async function init() {
             ...film,
 
             Id: index + 1,
-            wins: 0,
-            losses: 0,
             
             // Relazioni dirette
             directBeats: new Set(),
@@ -120,12 +114,27 @@ async function init() {
     startNextComparison();
 }
 
-function startNextComparison() {
+function startNextComparison(pair = null) {
 
-    const match = getNextComparison();
-    if (!match) {
-        finishTournament();
-        return;
+    let match;
+
+    if (pair) {
+        const filmA = getFilmById(pair[0]);
+        const filmB = getFilmById(pair[1]);
+
+        if (!filmA || !filmB) {
+            return;
+        }
+
+        match = [filmA, filmB];
+
+    } else {
+        match = getNextComparison();
+
+        if (!match) {
+            finishTournament();
+            return;
+        }
     }
 
     state.currentMatch = match;
@@ -140,14 +149,13 @@ function chooseWinner(index) {
     const winner = match[index];
     const loser = match[1 - index];
 
-    winner.wins++;
-    loser.losses++;
-
     winner.directBeats.add(loser.Id);
 
     state.history.push({
-        winner,
-        loser
+        filmAId: match[0].Id,
+        filmBId: match[1].Id,
+        winnerId: winner.Id,
+        loserId: loser.Id,
     });
 
     rebuildTransitiveRelations();
@@ -239,6 +247,33 @@ function getNextComparison() {
     ];
 }
 
+function undoLastComparison() {
+    if (state.history.length === 0) {
+        return;
+    }
+
+    const lastMatch = state.history.pop();
+
+    const winner = getFilmById(lastMatch.winnerId);
+    const loser = getFilmById(lastMatch.loserId);
+
+    if (!winner || !loser) {
+        return;
+    }
+
+    winner.directBeats.delete(loser.Id);
+
+    rebuildTransitiveRelations();
+
+    state.finished = false;
+
+    startNextComparison([
+        lastMatch.filmAId,
+        lastMatch.filmBId
+    ]);
+}
+$("#undo-comparison").onclick = undoLastComparison;
+
 function getStandings() {
     return [...state.films].sort((a, b) => {
         return a.beatenBy.size - b.beatenBy.size;
@@ -324,29 +359,18 @@ const render = {
         const body = $("#standings-body");
         body.innerHTML = "";
 
-        let previousRecord = null;
-
         getStandings().forEach((film, index) => {
-            const record = recordOf(film);
-            const isNewRecord = record !== previousRecord;
 
             const row = document.createElement("tr");
-
-            if (isNewRecord && index > 0) {
-                row.classList.add("record-separator");
-            }
 
             row.innerHTML = `
                 <td>${index + 1}</td>
                 <td>${escapeHtml(film.title)}</td>
-                <td><strong>${record}</strong></td>
-                <td>${film.wins}</td>
-                <td>${film.losses}</td>
+                <td>${film.beatenBy.size}</td>
+                <td>${film.beats.size}</td>
             `;
 
             body.appendChild(row);
-
-            previousRecord = record;
         });
     },
 
@@ -417,7 +441,8 @@ function finishTournament() {
         row.innerHTML = `
             <td>${index + 1}</td>
             <td>${escapeHtml(film.title)}</td>
-            <td><strong>${recordOf(film)}</strong></td>
+            <td>${film.beatenBy.size}</td>
+            <td>${film.beats.size}</td>
         `;
 
         body.appendChild(row);
