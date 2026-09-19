@@ -276,6 +276,19 @@ $("#undo-comparison").onclick = undoLastComparison;
 
 function getStandings() {
     return [...state.films].sort((a, b) => {
+
+        // Se A ha battuto B, A deve stare sopra B
+        if (a.beats.has(b.Id)) {
+            return -1;
+        }
+
+        // Se B ha battuto A, B deve stare sopra A
+        if (b.beats.has(a.Id)) {
+            return 1;
+        }
+
+        // Se non sono direttamente/transitivamente confrontabili,
+        // usiamo il numero di film sicuramente sopra
         return a.beatenBy.size - b.beatenBy.size;
     });
 }
@@ -366,8 +379,8 @@ const render = {
             row.innerHTML = `
                 <td>${index + 1}</td>
                 <td>${escapeHtml(film.title)}</td>
-                <td>${film.beatenBy.size}</td>
                 <td>${film.beats.size}</td>
+                <td>${film.beatenBy.size}</td>
             `;
 
             body.appendChild(row);
@@ -441,8 +454,8 @@ function finishTournament() {
         row.innerHTML = `
             <td>${index + 1}</td>
             <td>${escapeHtml(film.title)}</td>
-            <td>${film.beatenBy.size}</td>
             <td>${film.beats.size}</td>
+            <td>${film.beatenBy.size}</td>
         `;
 
         body.appendChild(row);

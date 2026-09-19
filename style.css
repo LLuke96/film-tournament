@@ -296,6 +296,11 @@ th:first-child {
     color: #888;
 }
 
+.ranking-tbody td:nth-child(3),
+.ranking-tbody td:nth-child(4) {
+    text-align: center;
+}
+
 .final {
     padding-top: 20px;
 }
