@@ -458,6 +458,26 @@ th:first-child {
     margin: 15px auto;
 }
 
+.top-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    margin-top: 20px;
+}
+
+#top-count {
+    width: 38px;
+    padding: 4px 2px;
+
+    border: 1px solid #bbb;
+    border-radius: 5px;
+
+    text-align: center;
+    font-size: 14px;
+}
+
 @media (max-width: 720px) {
 
     .container {

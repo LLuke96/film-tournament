@@ -145,6 +145,23 @@
 
                 <p id="final-rounds" class="subtitle"></p>
 
+                <div class="top-results">
+                    <label for="top-count">Mostra i primi</label>
+
+                    <input
+                        type="number"
+                        id="top-count"
+                        min="1"
+                        value="10"
+                    >
+
+                    <span>titoli</span>
+
+                    <button id="copy-top-results" class="info-button" type="button">
+                        Copia classifica
+                    </button>
+                </div>
+
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -162,23 +179,6 @@
                 <button class="secondary large" onclick="resetTournament()">
                     Nuovo torneo
                 </button>
-
-                <div class="top-results">
-                    <label for="top-count">Mostra i primi</label>
-
-                    <input
-                        type="number"
-                        id="top-count"
-                        min="1"
-                        value="10"
-                    >
-
-                    <span>titoli</span>
-
-                    <button id="copy-top-results">
-                        Copia classifica
-                    </button>
-                </div>
 
             </section>
 
