@@ -808,5 +808,34 @@
         "source": "IMDb",
         "src": "./src/posters/zootopia_2.jpg",
         "include": true
+    },
+    {
+        "title": "Inside Out",
+        "originalTitle": "Inside Out",
+        "year": 2015,
+        "studio": "Pixar Animation Studios",
+        "productionCompanies": [
+            "Pixar Animation Studios",
+            "Walt Disney Pictures"
+        ],
+        "country": [
+            "Stati Uniti"
+        ],
+        "director": [
+            "Pete Docter",
+            "Ronnie del Carmen"
+        ],
+        "runtime": 95,
+        "animation": "Computer animation",
+        "genres": [
+            "Animazione",
+            "Avventura",
+            "Commedia",
+            "Famiglia",
+            "Fantasy"
+        ],
+        "source": "Disney",
+        "src": "./src/posters/inside_out.jpg",
+        "include": true
     }
 ]
