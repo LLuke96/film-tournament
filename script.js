@@ -63,6 +63,7 @@ async function init() {
     }
     
     state.films = FILMS
+        .filter(film => film.include)
         .map(film => ({
             ...film,
             wins: 0,
