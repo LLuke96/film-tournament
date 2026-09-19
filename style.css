@@ -484,16 +484,61 @@ th:first-child {
     }
 
     .match {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
     }
 
     .vs {
-        text-align: center;
+        display: none;
     }
 
     .film-card {
-        min-height: 240px;
-        padding: 25px;
+        min-height: 0;
+        padding: 12px 8px;
+    }
+
+    .film-card h2 {
+        margin: 10px 0 6px;
+        font-size: 18px;
+    }
+
+    .film-poster {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        margin: 8px auto;
+    }
+
+    .film-meta {
+        gap: 4px;
+        margin: 6px 0;
+        font-size: 0.75rem;
+    }
+
+    .film-meta span:not(:last-child)::after {
+        margin-left: 4px;
+    }
+
+    .genres {
+        gap: 3px;
+        margin: 6px 0 10px;
+    }
+
+    .genre {
+        padding: 3px 5px;
+        font-size: 0.65rem;
+    }
+
+    .winner {
+        padding: 10px 5px;
+        font-size: 0.75rem;
+    }
+
+    .info-button {
+        margin-top: 6px;
+        padding: 4px 6px;
+        font-size: 0.75rem;
     }
 
     .topbar,
