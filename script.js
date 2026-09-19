@@ -22,6 +22,26 @@ async function loadFilms() {
 function getFilmById(id) {
     return state.films.find(film => film.Id === id);
 }
+function getFilmByTitle(title) { 
+    return state.films.find(film => film.title === title);
+} 
+function getBeatenTitles(prm) {
+    
+    let film = null;
+    switch (typeof prm) {
+        case 'number': film = getFilmById(prm); break;
+        case 'string': film = getFilmByTitle(prm); break;
+        case 'object': film = prm; break;
+        default: return undefined;
+    }
+
+    if (!film) { return undefined; }
+
+    const beatenTitles = [...film.beats]
+        .map(beatenId => getFilmById(beatenId).title);
+        
+    return beatenTitles;
+}
 
 function areComparableFilms(filmA, filmB) {
     return (
