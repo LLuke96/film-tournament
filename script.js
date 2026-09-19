@@ -239,9 +239,6 @@ const render = {
         $(`#film-${suffix}`).textContent =
             film.title;
 
-        $(`#record-${suffix}`).textContent =
-            recordOf(film);
-
         $(`#year-${suffix}`).textContent =
             film.year;
 
