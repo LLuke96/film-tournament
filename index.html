@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Film Swiss Tournament</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main class="container">
+
+            <header>
+                <p class="eyebrow">SWISS TOURNAMENT</p>
+                <h1>Film Animation Battle</h1>
+                <p class="subtitle">
+                    Scegli il vincitore di ogni confronto. Il sistema aggiorna
+                    automaticamente record, pairing e classifica.
+                </p>
+            </header>
+
+            <div id="error" class="error" hidden></div>
+
+            <section id="tournament" hidden>
+
+                <div class="topbar">
+                    <div>
+                        <strong id="round"></strong>
+                        <span id="match-counter"></span>
+                    </div>
+
+                    <button class="secondary" onclick="resetTournament()">
+                        Ricomincia
+                    </button>
+                </div>
+
+                <div class="progress-wrapper">
+                    <div class="progress-track">
+                        <div id="progress-bar" class="progress-bar"></div>
+                    </div>
+
+                    <span id="progress-text"></span>
+                </div>
+
+                <section class="match">
+
+                    <div class="film-card">
+
+                        <div class="record" id="record-a">0-0</div>
+
+                        <h2 id="film-a"></h2>
+
+                        <div class="film-meta">
+                            <span id="year-a"></span>
+                            <span id="studio-a"></span>
+                            <span id="runtime-a"></span>
+                        </div>
+
+                        <div class="genres" id="genres-a"></div>
+
+                        <button id="winner-a" class="winner">
+                            VINCE QUESTO FILM
+                        </button>
+
+                        <button
+                            id="info-a"
+                            class="info-button"
+                            type="button">
+                            Info Aggiuntive
+                        </button>
+
+                    </div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="film-card">
+
+                        <div class="record" id="record-b">0-0</div>
+
+                        <h2 id="film-b"></h2>
+
+                        <div class="film-meta">
+                            <span id="year-b"></span>
+                            <span id="studio-b"></span>
+                            <span id="runtime-b"></span>
+                        </div>
+
+                        <div class="genres" id="genres-b"></div>
+
+                        <button id="winner-b" class="winner">
+                            VINCE QUESTO FILM
+                        </button>
+
+                        <button
+                            id="info-b"
+                            class="info-button"
+                            type="button">
+                            Info Aggiuntive
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <section class="standings">
+
+                    <div class="section-title">
+                        <h2>Classifica</h2>
+                        <span>Ordinata per record</span>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Film</th>
+                                <th>Record</th>
+                                <th>V</th>
+                                <th>S</th>
+                            </tr>
+                            </thead>
+
+                            <tbody id="standings-body"></tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+            </section>
+
+            <section id="final" class="final" hidden>
+
+                <p class="eyebrow">TORNEO COMPLETATO</p>
+
+                <h1>Classifica finale</h1>
+
+                <p id="final-rounds" class="subtitle"></p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Film</th>
+                            <th>Record</th>
+                        </tr>
+                        </thead>
+
+                        <tbody id="final-body"></tbody>
+                    </table>
+                </div>
+
+                <button class="secondary large" onclick="resetTournament()">
+                    Nuovo torneo
+                </button>
+
+            </section>
+
+        </main>
+
+        <div id="film-modal" class="film-modal" hidden>
+
+            <div class="film-modal-content">
+
+                <button id="close-film-modal" class="close-modal">
+                    ×
+                </button>
+
+                <h2 id="modal-title"></h2>
+                <p id="modal-original-title" class="original-title"></p>
+
+                <div class="modal-info">
+
+                    <div>
+                        <strong>Anno</strong>
+                        <span id="modal-year"></span>
+                    </div>
+
+                    <div>
+                        <strong>Studio</strong>
+                        <span id="modal-studio"></span>
+                    </div>
+
+                    <div>
+                        <strong>Produzione</strong>
+                        <span id="modal-production"></span>
+                    </div>
+
+                    <div>
+                        <strong>Paese</strong>
+                        <span id="modal-country"></span>
+                    </div>
+
+                    <div>
+                        <strong>Durata</strong>
+                        <span id="modal-runtime"></span>
+                    </div>
+
+                    <div>
+                        <strong>Animazione</strong>
+                        <span id="modal-animation"></span>
+                    </div>
+
+                    <div>
+                        <strong>Regia</strong>
+                        <span id="modal-director"></span>
+                    </div>
+
+                    <div>
+                        <strong>Generi</strong>
+                        <span id="modal-genres"></span>
+                    </div>
+
+                    <div class="modal-source">
+                        <strong>Fonte</strong>
+                        <span id="modal-source"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,568 @@
+[
+    {
+        "Id": 1,
+        "include": true,
+        "title": "Il Pianeta del Tesoro",
+        "originalTitle": "Treasure Planet",
+        "year": 2002,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["John Musker", "Ron Clements"],
+        "runtime": 95,
+        "animation": "2D + CGI",
+        "genres": ["Avventura", "Fantascienza", "Fantasy"],
+        "source": "Liberamente basato su L'isola del tesoro di Robert Louis Stevenson"
+    },
+
+    {
+        "Id": 2,
+        "include": true,
+        "title": "Atlantis",
+        "originalTitle": "Atlantis: The Lost Empire",
+        "year": 2001,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Gary Trousdale", "Kirk Wise"],
+        "runtime": 96,
+        "animation": "2D + CGI",
+        "genres": ["Avventura", "Fantascienza", "Fantasy"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 3,
+        "include": true,
+        "title": "Lilo & Stitch",
+        "originalTitle": "Lilo & Stitch",
+        "year": 2002,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Chris Sanders", "Dean DeBlois"],
+        "runtime": 92,
+        "animation": "2D",
+        "genres": ["Commedia", "Fantascienza", "Avventura", "Famiglia"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 4,
+        "include": true,
+        "title": "Koda Fratello Orso",
+        "originalTitle": "Brother Bear",
+        "year": 2003,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Aaron Blaise", "Robert Walker"],
+        "runtime": 85,
+        "animation": "2D",
+        "genres": ["Avventura", "Fantasy", "Commedia", "Drammatico"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 5,
+        "include": true,
+        "title": "Hercules",
+        "originalTitle": "Hercules",
+        "year": 1997,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["John Musker", "Ron Clements"],
+        "runtime": 92,
+        "animation": "2D",
+        "genres": ["Avventura", "Commedia", "Fantasy", "Musical"],
+        "source": "Mitologia greca"
+    },
+
+    {
+        "Id": 6,
+        "include": true,
+        "title": "Tarzan",
+        "originalTitle": "Tarzan",
+        "year": 1999,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Kevin Lima", "Chris Buck"],
+        "runtime": 88,
+        "animation": "2D + CGI",
+        "genres": ["Avventura", "Azione", "Drammatico", "Musical"],
+        "source": "Tarzan of the Apes di Edgar Rice Burroughs"
+    },
+
+    {
+        "Id": 7,
+        "include": true,
+        "title": "Le Follie dell'Imperatore",
+        "originalTitle": "The Emperor's New Groove",
+        "year": 2000,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Mark Dindal"],
+        "runtime": 78,
+        "animation": "2D",
+        "genres": ["Commedia", "Avventura", "Fantasy"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 8,
+        "include": true,
+        "title": "Robinson",
+        "originalTitle": "Meet the Robinsons",
+        "year": 2007,
+        "studio": "Walt Disney Animation Studios",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Stephen J. Anderson"],
+        "runtime": 95,
+        "animation": "CGI",
+        "genres": ["Fantascienza", "Avventura", "Commedia", "Famiglia"],
+        "source": "A Day with Wilbur Robinson di William Joyce"
+    },
+
+    {
+        "Id": 9,
+        "include": true,
+        "title": "Big Hero 6",
+        "originalTitle": "Big Hero 6",
+        "year": 2014,
+        "studio": "Walt Disney Animation Studios",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Don Hall", "Chris Williams"],
+        "runtime": 102,
+        "animation": "CGI",
+        "genres": ["Azione", "Avventura", "Fantascienza", "Supereroi"],
+        "source": "Marvel Comics"
+    },
+
+    {
+        "Id": 10,
+        "include": true,
+        "title": "Toy Story",
+        "originalTitle": "Toy Story",
+        "year": 1995,
+        "studio": "Pixar Animation Studios",
+        "productionCompanies": ["Walt Disney Pictures", "Pixar"],
+        "country": ["USA"],
+        "director": ["John Lasseter"],
+        "runtime": 81,
+        "animation": "CGI",
+        "genres": ["Avventura", "Commedia", "Famiglia"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 11,
+        "include": true,
+        "title": "Wall-E",
+        "originalTitle": "WALL-E",
+        "year": 2008,
+        "studio": "Pixar Animation Studios",
+        "productionCompanies": ["Walt Disney Pictures", "Pixar"],
+        "country": ["USA"],
+        "director": ["Andrew Stanton"],
+        "runtime": 98,
+        "animation": "CGI",
+        "genres": ["Fantascienza", "Romance", "Avventura"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 12,
+        "include": true,
+        "title": "Coco",
+        "originalTitle": "Coco",
+        "year": 2017,
+        "studio": "Pixar Animation Studios",
+        "productionCompanies": ["Walt Disney Pictures", "Pixar"],
+        "country": ["USA"],
+        "director": ["Lee Unkrich", "Adrian Molina"],
+        "runtime": 105,
+        "animation": "CGI",
+        "genres": ["Fantasy", "Avventura", "Musical", "Famiglia"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 13,
+        "include": true,
+        "title": "Inside Out 2",
+        "originalTitle": "Inside Out 2",
+        "year": 2024,
+        "studio": "Pixar Animation Studios",
+        "productionCompanies": ["Walt Disney Pictures", "Pixar"],
+        "country": ["USA"],
+        "director": ["Kelsey Mann"],
+        "runtime": 96,
+        "animation": "CGI",
+        "genres": ["Commedia", "Coming-of-age", "Fantasy"],
+        "source": "Sequel di Inside Out"
+    },
+
+    {
+        "Id": 14,
+        "include": true,
+        "title": "La Strada per El Dorado",
+        "originalTitle": "The Road to El Dorado",
+        "year": 2000,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Pictures", "DreamWorks Animation"],
+        "country": ["USA"],
+        "director": ["Don Paul", "Eric Bergeron"],
+        "runtime": 89,
+        "animation": "2D",
+        "genres": ["Avventura", "Commedia", "Musical"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 15,
+        "include": true,
+        "title": "Shrek",
+        "originalTitle": "Shrek",
+        "year": 2001,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation", "PDI/DreamWorks"],
+        "country": ["USA"],
+        "director": ["Andrew Adamson", "Vicky Jenson"],
+        "runtime": 90,
+        "animation": "CGI",
+        "genres": ["Commedia", "Fantasy", "Avventura"],
+        "source": "Libro illustrato di William Steig"
+    },
+
+    {
+        "Id": 16,
+        "include": true,
+        "title": "Dragon Trainer",
+        "originalTitle": "How to Train Your Dragon",
+        "year": 2010,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation"],
+        "country": ["USA"],
+        "director": ["Chris Sanders", "Dean DeBlois"],
+        "runtime": 98,
+        "animation": "CGI",
+        "genres": ["Avventura", "Fantasy", "Azione"],
+        "source": "Serie di libri di Cressida Cowell"
+    },
+
+    {
+        "Id": 17,
+        "include": true,
+        "title": "Il Gatto con gli Stivali 2",
+        "originalTitle": "Puss in Boots: The Last Wish",
+        "year": 2022,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation"],
+        "country": ["USA"],
+        "director": ["Joel Crawford"],
+        "runtime": 102,
+        "animation": "CGI",
+        "genres": ["Avventura", "Commedia", "Fantasy"],
+        "source": "Personaggio della saga di Shrek"
+    },
+
+    {
+        "Id": 18,
+        "include": true,
+        "title": "Il Robot Selvaggio",
+        "originalTitle": "The Wild Robot",
+        "year": 2024,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": ["DreamWorks Animation"],
+        "country": ["USA"],
+        "director": ["Chris Sanders"],
+        "runtime": 102,
+        "animation": "CGI",
+        "genres": ["Fantascienza", "Avventura", "Drammatico"],
+        "source": "Romanzo The Wild Robot di Peter Brown"
+    },
+
+    {
+        "Id": 19,
+        "include": true,
+        "title": "La Gabbianella e il Gatto",
+        "originalTitle": "La gabbianella e il gatto",
+        "year": 1998,
+        "studio": "Lanterna Magica",
+        "productionCompanies": ["Lanterna Magica", "Cecchi Gori"],
+        "country": ["Italia"],
+        "director": ["Enzo D'Alò"],
+        "runtime": 75,
+        "animation": "2D",
+        "genres": ["Avventura", "Drammatico", "Famiglia"],
+        "source": "Storia di una gabbianella e del gatto che le insegnò a volare di Luis Sepúlveda"
+    },
+
+    {
+        "Id": 20,
+        "include": true,
+        "title": "Il Castello Errante di Howl",
+        "originalTitle": "Howl's Moving Castle",
+        "year": 2004,
+        "studio": "Studio Ghibli",
+        "productionCompanies": ["Studio Ghibli"],
+        "country": ["Giappone"],
+        "director": ["Hayao Miyazaki"],
+        "runtime": 119,
+        "animation": "2D",
+        "genres": ["Fantasy", "Avventura", "Romance"],
+        "source": "Romanzo di Diana Wynne Jones"
+    },
+
+    {
+        "Id": 21,
+        "include": true,
+        "title": "The Mitchells vs. The Machines",
+        "originalTitle": "The Mitchells vs. the Machines",
+        "year": 2021,
+        "studio": "Sony Pictures Animation",
+        "productionCompanies": [
+            "Columbia Pictures",
+            "Sony Pictures Animation",
+            "Lord Miller Productions",
+            "One Cool Films"
+        ],
+        "country": ["USA", "Hong Kong"],
+        "director": ["Mike Rianda", "Jeff Rowe"],
+        "runtime": 109,
+        "animation": "CGI",
+        "genres": ["Commedia", "Fantascienza", "Avventura"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 22,
+        "include": true,
+        "title": "Il Re Leone",
+        "originalTitle": "The Lion King",
+        "year": 1994,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Roger Allers", "Rob Minkoff"],
+        "runtime": 88,
+        "animation": "2D",
+        "genres": ["Avventura", "Drammatico", "Musical", "Famiglia"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 23,
+        "include": true,
+        "title": "Il Gigante di Ferro",
+        "originalTitle": "The Iron Giant",
+        "year": 1999,
+        "studio": "Warner Bros. Feature Animation",
+        "productionCompanies": ["Warner Bros."],
+        "country": ["USA"],
+        "director": ["Brad Bird"],
+        "runtime": 86,
+        "animation": "2D + CGI",
+        "genres": ["Fantascienza", "Avventura", "Drammatico"],
+        "source": "The Iron Man di Ted Hughes"
+    },
+
+    {
+        "Id": 24,
+        "include": true,
+        "title": "Spider-Man: Un nuovo universo",
+        "originalTitle": "Spider-Man: Into the Spider-Verse",
+        "year": 2018,
+        "studio": "Sony Pictures Animation",
+        "productionCompanies": [
+            "Columbia Pictures",
+            "Sony Pictures Animation",
+            "Marvel Entertainment",
+            "Lord Miller Productions"
+        ],
+        "country": ["USA"],
+        "director": [
+            "Bob Persichetti",
+            "Peter Ramsey",
+            "Rodney Rothman"
+        ],
+        "runtime": 117,
+        "animation": "CGI / stile fumetto 2D",
+        "genres": ["Supereroi", "Azione", "Avventura", "Commedia"],
+        "source": "Marvel Comics"
+    },
+
+    {
+        "Id": 25,
+        "include": true,
+        "title": "Gli Incredibili",
+        "originalTitle": "The Incredibles",
+        "year": 2004,
+        "studio": "Pixar Animation Studios",
+        "productionCompanies": ["Walt Disney Pictures", "Pixar"],
+        "country": ["USA"],
+        "director": ["Brad Bird"],
+        "runtime": 115,
+        "animation": "CGI",
+        "genres": ["Supereroi", "Azione", "Avventura", "Commedia"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 26,
+        "include": true,
+        "title": "Alla Ricerca di Nemo",
+        "originalTitle": "Finding Nemo",
+        "year": 2003,
+        "studio": "Pixar Animation Studios",
+        "productionCompanies": ["Walt Disney Pictures", "Pixar"],
+        "country": ["USA"],
+        "director": ["Andrew Stanton"],
+        "runtime": 100,
+        "animation": "CGI",
+        "genres": ["Avventura", "Commedia", "Drammatico", "Famiglia"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 27,
+        "include": true,
+        "title": "Your Name",
+        "originalTitle": "Kimi no Na wa.",
+        "year": 2016,
+        "studio": "CoMix Wave Films",
+        "productionCompanies": [
+            "TOHO",
+            "CoMix Wave Films",
+            "KADOKAWA",
+            "AMUSE"
+        ],
+        "country": ["Giappone"],
+        "director": ["Makoto Shinkai"],
+        "runtime": 107,
+        "animation": "Anime / 2D digitale",
+        "genres": ["Romance", "Fantasy", "Drammatico"],
+        "source": "Originale"
+    },
+
+    {
+        "Id": 28,
+        "include": true,
+        "title": "Nimona",
+        "originalTitle": "Nimona",
+        "year": 2023,
+        "studio": "Annapurna Animation",
+        "productionCompanies": [
+            "Annapurna Pictures",
+            "Annapurna Animation",
+            "DNEG"
+        ],
+        "country": ["USA"],
+        "director": ["Nick Bruno", "Troy Quane"],
+        "runtime": 101,
+        "animation": "CGI",
+        "genres": ["Fantasy", "Azione", "Avventura", "Commedia"],
+        "source": "Graphic novel di ND Stevenson"
+    },
+
+    {
+        "Id": 29,
+        "include": true,
+        "title": "Robots",
+        "originalTitle": "Robots",
+        "year": 2005,
+        "studio": "Blue Sky Studios",
+        "productionCompanies": [
+            "Blue Sky Studios",
+            "20th Century Fox Animation"
+        ],
+        "country": ["USA"],
+        "director": ["Chris Wedge"],
+        "runtime": 90,
+        "animation": "CGI",
+        "genres": ["Fantascienza", "Commedia", "Avventura"],
+        "source": "Libro illustrato di William Joyce"
+    },
+
+    {
+        "Id": 30,
+        "include": false,
+        "title": "The LEGO Movie",
+        "originalTitle": "The Lego Movie",
+        "year": 2014,
+        "studio": "Warner Animation Group",
+        "productionCompanies": [
+            "Warner Animation Group",
+            "Village Roadshow Pictures",
+            "Lego System A/S",
+            "Vertigo Entertainment",
+            "Animal Logic"
+        ],
+        "country": ["USA", "Australia", "Danimarca"],
+        "director": ["Phil Lord", "Christopher Miller"],
+        "runtime": 100,
+        "animation": "CGI / stile stop-motion",
+        "genres": ["Commedia", "Avventura", "Azione"],
+        "source": "LEGO"
+    },
+
+    {
+        "Id": 31,
+        "include": true,
+        "title": "Aladdin",
+        "originalTitle": "Aladdin",
+        "year": 1992,
+        "studio": "Walt Disney Feature Animation",
+        "productionCompanies": ["Walt Disney Pictures"],
+        "country": ["USA"],
+        "director": ["Ron Clements", "John Musker"],
+        "runtime": 90,
+        "animation": "2D",
+        "genres": ["Fantasy", "Avventura", "Commedia", "Musical"],
+        "source": "Le mille e una notte"
+    },
+
+    {
+        "Id": 32,
+        "include": true,
+        "title": "Nightmare Before Christmas",
+        "originalTitle": "The Nightmare Before Christmas",
+        "year": 1993,
+        "studio": "Skellington Productions",
+        "productionCompanies": [
+            "Touchstone Pictures",
+            "Skellington Productions"
+        ],
+        "country": ["USA"],
+        "director": ["Henry Selick"],
+        "runtime": 76,
+        "animation": "Stop-motion",
+        "genres": ["Fantasy", "Musical", "Horror", "Commedia"],
+        "source": "Storia originale di Tim Burton"
+    },
+
+    {
+        "Id": 33,
+        "include": true,
+        "title": "Z la formica",
+        "originalTitle": "Antz",
+        "year": 1998,
+        "studio": "DreamWorks Animation",
+        "productionCompanies": [
+            "DreamWorks Pictures",
+            "DreamWorks Animation",
+            "PDI"
+        ],
+        "country": ["USA"],
+        "director": ["Eric Darnell", "Tim Johnson"],
+        "runtime": 83,
+        "animation": "CGI",
+        "genres": ["Commedia", "Avventura", "Satira"],
+        "source": "Originale"
+    }
+]
