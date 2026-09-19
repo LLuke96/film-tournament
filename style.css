@@ -486,6 +486,7 @@ th:first-child {
     .match {
         grid-template-columns: 1fr 1fr;
         gap: 8px;
+        align-items: stretch;
     }
 
     .vs {
@@ -494,6 +495,7 @@ th:first-child {
 
     .film-card {
         min-height: 0;
+        height: 100%;
         padding: 12px 8px;
     }
 
