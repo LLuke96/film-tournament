@@ -567,7 +567,7 @@
         "genres": ["Commedia", "Avventura", "Azione"],
         "source": "IMDb",
         "src": "./src/posters/the_lego_movie.jpg",
-        "include": false
+        "include": true
     },
     {
         "title": "Il re leone",
