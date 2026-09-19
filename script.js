@@ -251,6 +251,11 @@ const render = {
         $(`#runtime-${suffix}`).textContent =
             `${film.runtime} min`;
 
+        // Gestione locandina
+        const poster = $(`#poster-${suffix}`);
+        poster.src = film.src;
+        poster.alt = `Locandina di ${film.title}`;
+
         const genres = $(`#genres-${suffix}`);
         genres.innerHTML = "";
 
