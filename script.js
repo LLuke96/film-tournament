@@ -1,55 +1,88 @@
-let FILMS = [];
-const ROUNDS = null;
 const state = {
     films: [],
-    round: 1,
-    totalRounds: 0,
-    currentMatches: [],
-    currentMatchIndex: 0,
     history: [],
+    currentMatch: null,
     finished: false,
 };
 
 const $ = (selector) => document.querySelector(selector);
 
-function shuffle(array) {
-    const copy = [...array];
-    for (let i = copy.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [copy[i], copy[j]] = [copy[j], copy[i]];
+async function loadFilms() {
+    const response = await fetch("./data/films.json");
+
+    if (!response.ok) {
+        throw new Error(
+            `Errore HTTP ${response.status}`
+        );
     }
-    return copy;
+
+    return await response.json();
 }
 
-function isPowerOfTwo(n) {
-    return n >= 2 && (n & (n - 1)) === 0;
+function getFilmById(id) {
+    return state.films.find(film => film.Id === id);
+}
+
+function areComparableFilms(filmA, filmB) {
+    return (
+        filmA.beats.has(filmB.Id) ||
+        filmA.beatenBy.has(filmB.Id)
+    );
+}
+
+function getIncomparablePairs() {
+    const pairs = [];
+
+    for (let i = 0; i < state.films.length; i++) {
+        for (let j = i + 1; j < state.films.length; j++) {
+            const filmA = state.films[i];
+            const filmB = state.films[j];
+
+            if (!areComparableFilms(filmA, filmB)) {
+                pairs.push([filmA, filmB]);
+            }
+        }
+    }
+
+    return pairs;
 }
 
 function recordOf(film) {
     return `${film.wins}-${film.losses}`;
 }
 
-function init() {
-    state.films = FILMS.filter(f => f.include);
+async function init() {
+    
+    let FILMS = [];
+    try {
+        FILMS = await loadFilms(); 
+    } catch (error) {
+        console.error("Errore caricamento films.json:", error);
+        showError("Impossibile caricare il database dei film.");
+        return;
+    }
+    
+    state.films = FILMS
+        .map(film => ({
+            ...film,
+            wins: 0,
+            losses: 0,
+            
+            // Relazioni dirette
+            directBeats: new Set(),
+
+            // Relazioni dirette + transitive
+            beats: new Set(),
+            beatenBy: new Set(),
+        }));
 
     if (state.films.length < 2) {
-        return showError("Inserisci almeno 2 film nell'array FILMS con include = true.");
-    }
-
-    if (!isPowerOfTwo(state.films.length)) {
-        return showError(
-            `Hai inserito ${state.films.length} film. Il numero deve essere una potenza di 2: 2, 4, 8, 16, 32...`
-        );
+        return showError("Inserisci almeno 2 film nell'array.");
     }
 
     const titles = state.films.map(f => f.title.trim().toLowerCase());
     if (new Set(titles).size !== titles.length) {
         return showError("Hai inserito almeno un titolo duplicato.");
-    }
-
-    state.totalRounds = ROUNDS ?? Math.log2(state.films.length);
-    if (!Number.isInteger(state.totalRounds) || state.totalRounds < 1) {
-        return showError("ROUNDS deve essere un numero intero positivo.");
     }
 
     const ids = state.films.map(f => f.Id);
@@ -60,129 +93,24 @@ function init() {
         return showError("Tutti gli Id dei film devono essere numeri interi positivi.");
     }
 
-    state.films.forEach(film => {
-        film.wins = 0;
-        film.losses = 0;
-        film.opponents = new Set();
-    });
-
     $("#error").hidden = true;
-    startRound();
+    startNextComparison();
 }
 
-function startRound() {
-    if (state.round > state.totalRounds) {
+function startNextComparison() {
+
+    const match = getNextComparison();
+    if (!match) {
         finishTournament();
         return;
     }
 
-    state.currentMatches = makeSwissPairings();
-    state.currentMatchIndex = 0;
-
+    state.currentMatch = match;
     render.main();
 }
 
-function makeSwissPairings() {
-    // Primo round: casuale.
-    if (state.round === 1) {
-        const shuffled = shuffle(state.films);
-        const matches = [];
-
-        for (let i = 0; i < shuffled.length; i += 2) {
-            matches.push([shuffled[i], shuffled[i + 1]]);
-        }
-
-        return matches;
-    }
-
-    // Swiss standard:
-    // raggruppiamo per record e proviamo ad accoppiare
-    // squadre/film con lo stesso record evitando rematch.
-    const groups = new Map();
-
-    for (const film of state.films) {
-        const record = recordOf(film);
-
-        if (!groups.has(record)) {
-            groups.set(record, []);
-        }
-
-        groups.get(record).push(film);
-    }
-
-    const records = [...groups.keys()].sort((a, b) => {
-        const [aw, al] = a.split("-").map(Number);
-        const [bw, bl] = b.split("-").map(Number);
-
-        // Prima più vittorie, poi meno sconfitte.
-        if (bw !== aw) return bw - aw;
-        return al - bl;
-    });
-
-    const working = new Map();
-
-    for (const record of records) {
-        working.set(record, shuffle(groups.get(record)));
-    }
-
-    // Se un gruppo è dispari, trasferiamo un "floater"
-    // al record immediatamente inferiore.
-    for (let i = 0; i < records.length - 1; i++) {
-        const current = working.get(records[i]);
-        const next = working.get(records[i + 1]);
-
-        if (current.length % 2 === 1) {
-            let candidateIndex = current.length - 1;
-
-            // Preferiamo un film che non abbia già affrontato
-            // nessuno del gruppo successivo.
-            for (let j = current.length - 1; j >= 0; j--) {
-                const candidate = current[j];
-
-                const hasRematch = next.some(opponent =>
-                    candidate.opponents.has(opponent.Id)
-                );
-
-                if (!hasRematch) {
-                    candidateIndex = j;
-                    break;
-                }
-            }
-
-            const [floater] = current.splice(candidateIndex, 1);
-            next.push(floater);
-        }
-    }
-
-    const matches = [];
-
-    // Accoppiamento dentro ogni gruppo.
-    for (const record of records) {
-        const group = working.get(record);
-
-        while (group.length >= 2) {
-            const a = group.shift();
-
-            // Cerchiamo il primo avversario mai affrontato.
-            let opponentIndex = group.findIndex(
-                film => !a.opponents.has(film.Id)
-            );
-
-            // Se non esiste, usiamo comunque un avversario.
-            if (opponentIndex === -1) {
-                opponentIndex = 0;
-            }
-
-            const [b] = group.splice(opponentIndex, 1);
-            matches.push([a, b]);
-        }
-    }
-
-    return matches;
-}
-
 function chooseWinner(index) {
-    const match = state.currentMatches[state.currentMatchIndex];
+    const match = state.currentMatch;
 
     if (!match) return;
 
@@ -191,53 +119,102 @@ function chooseWinner(index) {
 
     winner.wins++;
     loser.losses++;
-    winner.opponents.add(loser.Id);
-    loser.opponents.add(winner.Id);
+
+    winner.directBeats.add(loser.Id);
 
     state.history.push({
-        round: state.round,
         winner,
         loser
     });
 
-    state.currentMatchIndex++;
+    rebuildTransitiveRelations();
 
-    if (state.currentMatchIndex >= state.currentMatches.length) {
-        state.round++;
+    state.currentMatch = null;
 
-        if (state.round > state.totalRounds) {
-            finishTournament();
-        } else {
-            startRound();
+    startNextComparison();
+}
+
+function rebuildTransitiveRelations() {
+
+    // Azzero i set che includono confronti transitivi
+    state.films.forEach(film => {
+        film.beats.clear();
+        film.beatenBy.clear();
+    });
+
+    state.films.forEach(film => {
+
+        const visited = new Set();
+
+        // Visito tutti gli avversari che ho già battuto e aggiungo gli avversari
+        // che loro hanno battuto
+        const stack = [...film.directBeats];
+        while (stack.length > 0) {
+            const opponentId = stack.pop();
+
+            if (visited.has(opponentId)) {
+                continue;
+            }
+
+            visited.add(opponentId);
+
+            const opponent = getFilmById(opponentId);
+            if (!opponent) { continue; }
+
+            // Se ho raggiunto un film, vuol dire che sono sicuro che lo batterei
+            film.beats.add(opponentId);
+
+            // E viceversa, lui sarebbe sicuramente battuto da me
+            opponent.beatenBy.add(film.Id);
+
+            // Se ho sconfitto un avversario A, controllo anche tutti gli avversari che
+            // A ha sconfitto, perché significa che batterei anche loro
+            opponent.directBeats.forEach(opponentBeatenId => {
+                if (!visited.has(opponentBeatenId)) {
+                    stack.push(opponentBeatenId);
+                }
+            })
         }
-    } else {
-        render.main();
-    }
+    });
+}
+
+function getNextComparison() {
+    const pairs = getIncomparablePairs();
+
+    if (pairs.length === 0) { return null; }
+
+    /*
+     * Preferiamo coppie che sembrano vicine
+     * nella classifica attuale.
+     *
+     * beats.size rappresenta quanti film
+     * abbiamo già dimostrato essere inferiori.
+     */
+    pairs.sort((pairA, pairB) => {
+        const [filmA1, filmB1] = pairA;
+        const [filmA2, filmB2] = pairB;
+
+        const distance1 = Math.abs(filmA1.beats.size - filmB1.beats.size);
+        const distance2 = Math.abs(filmA2.beats.size - filmB2.beats.size);
+
+        return distance1 - distance2;
+    });
+
+    return pairs[0];
 }
 
 function getStandings() {
     return [...state.films].sort((a, b) => {
-        const winDifference = b.wins - a.wins;
-
-        if (winDifference !== 0) {
-            return winDifference;
-        }
-
-        return a.losses - b.losses;
+        return a.beatenBy.size - b.beatenBy.size;
     });
 }
 
 const render = {
 
     main: function() {
-        const [a, b] =
-            state.currentMatches[state.currentMatchIndex];
+        const [a, b] = state.currentMatch;
 
-        $("#round").textContent =
-            `Round ${state.round} / ${state.totalRounds}`;
-
-        $("#match-counter").textContent =
-            `Match ${state.currentMatchIndex + 1} di ${state.currentMatches.length}`;
+        $("#match-counter").textContent = `Confronto numero ${state.history.length + 1}`;
 
         render.filmCard(a, "a");
         render.filmCard(b, "b");
@@ -285,18 +262,24 @@ const render = {
     },
 
     progress: function() {
-        const totalMatches =
-            state.films.length * state.totalRounds / 2;
 
-        const completed = state.history.length;
+        const films = state.films;
+        
+        let rankedFilms = 0;
+        films.forEach(film => {
+            if (film.beats.size + film.beatenBy.size === films.length - 1) {
+                rankedFilms++;
+            }
+        })
+
         const percentage =
-            Math.round((completed / totalMatches) * 100);
+            Math.round((rankedFilms / films.length) * 100);
 
         $("#progress-bar").style.width =
             `${percentage}%`;
 
         $("#progress-text").textContent =
-            `${completed} / ${totalMatches} partite completate`;
+            `${rankedFilms} / ${films.length} film classificati`;
     },
 
     standings: function() {
@@ -403,7 +386,7 @@ function finishTournament() {
     });
 
     $("#final-rounds").textContent =
-        `${state.totalRounds} round completati · ${state.history.length} partite disputate`;
+        `${state.history.length} confronti effettuati`;
 }
 
 function escapeHtml(value) {
