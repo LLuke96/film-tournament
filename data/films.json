@@ -11,7 +11,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Musicale", "Fantasy", "Avventura", "Commedia"],
         "source": "IMDb",
-        "src": "./img/posters/aladdin.jpg",
+        "src": "./src/posters/aladdin.jpg",
         "include": true
     },
     {
@@ -26,7 +26,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Musicale", "Storico", "Fantasy", "Avventura"],
         "source": "IMDb",
-        "src": "./img/posters/anastasia.jpg",
+        "src": "./src/posters/anastasia.jpg",
         "include": true
     },
     {
@@ -41,7 +41,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Famiglia"],
         "source": "IMDb",
-        "src": "./img/posters/antz.jpg",
+        "src": "./src/posters/antz.jpg",
         "include": true
     },
     {
@@ -56,7 +56,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Avventura", "Fantasy", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/atlantis_the_lost_empire.jpg",
+        "src": "./src/posters/atlantis_the_lost_empire.jpg",
         "include": true
     },
     {
@@ -71,7 +71,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Musicale", "Fantasy", "Romantico"],
         "source": "IMDb",
-        "src": "./img/posters/beauty_and_the_beast.jpg",
+        "src": "./src/posters/beauty_and_the_beast.jpg",
         "include": true
     },
     {
@@ -86,7 +86,7 @@
         "animation": "Animazione 3D",
         "genres": ["Azione", "Avventura", "Commedia", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/big_hero_6.jpg",
+        "src": "./src/posters/big_hero_6.jpg",
         "include": true
     },
     {
@@ -101,7 +101,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Avventura", "Commedia", "Fantasy"],
         "source": "IMDb",
-        "src": "./img/posters/brother_bear.jpg",
+        "src": "./src/posters/brother_bear.jpg",
         "include": true
     },
     {
@@ -116,7 +116,7 @@
         "animation": "Stop motion",
         "genres": ["Commedia", "Avventura", "Azione"],
         "source": "IMDb",
-        "src": "./img/posters/chicken_run.jpg",
+        "src": "./src/posters/chicken_run.jpg",
         "include": true
     },
     {
@@ -131,7 +131,7 @@
         "animation": "Animazione 3D",
         "genres": ["Musicale", "Fantasy", "Avventura", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/coco.jpg",
+        "src": "./src/posters/coco.jpg",
         "include": true
     },
     {
@@ -146,7 +146,7 @@
         "animation": "Animazione 3D",
         "genres": ["Avventura", "Commedia", "Famiglia"],
         "source": "IMDb",
-        "src": "./img/posters/finding_nemo.jpg",
+        "src": "./src/posters/finding_nemo.jpg",
         "include": true
     },
     {
@@ -161,7 +161,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Musicale", "Commedia", "Fantasy", "Avventura"],
         "source": "IMDb",
-        "src": "./img/posters/hercules.jpg",
+        "src": "./src/posters/hercules.jpg",
         "include": true
     },
     {
@@ -176,7 +176,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Musicale", "Mistero", "Avventura"],
         "source": "IMDb",
-        "src": "./img/posters/hoodwinked.jpg",
+        "src": "./src/posters/hoodwinked.jpg",
         "include": true
     },
     {
@@ -191,7 +191,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Fantasy", "Avventura", "Romantico"],
         "source": "IMDb",
-        "src": "./img/posters/howl_moving_castle.jpg",
+        "src": "./src/posters/howl_moving_castle.jpg",
         "include": true
     },
     {
@@ -206,7 +206,7 @@
         "animation": "Animazione 3D",
         "genres": ["Avventura", "Fantasy", "Azione", "Commedia"],
         "source": "IMDb",
-        "src": "./img/posters/how_to_train_your_dragon.jpg",
+        "src": "./src/posters/how_to_train_your_dragon.jpg",
         "include": true
     },
     {
@@ -221,7 +221,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/inside_out_2.jpg",
+        "src": "./src/posters/inside_out_2.jpg",
         "include": true
     },
     {
@@ -236,7 +236,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Azione", "Arti marziali"],
         "source": "IMDb",
-        "src": "./img/posters/kung_fu_panda.jpg",
+        "src": "./src/posters/kung_fu_panda.jpg",
         "include": true
     },
     {
@@ -251,7 +251,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Avventura", "Commedia", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/la_gabbianella_e_il_gatto.jpg",
+        "src": "./src/posters/la_gabbianella_e_il_gatto.jpg",
         "include": true
     },
     {
@@ -266,7 +266,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Commedia", "Fantascienza", "Avventura"],
         "source": "IMDb",
-        "src": "./img/posters/lilo_and_stitch.jpg",
+        "src": "./src/posters/lilo_and_stitch.jpg",
         "include": true
     },
     {
@@ -281,7 +281,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Famiglia"],
         "source": "IMDb",
-        "src": "./img/posters/madagascar.jpg",
+        "src": "./src/posters/madagascar.jpg",
         "include": true
     },
     {
@@ -296,7 +296,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Fantascienza", "Avventura"],
         "source": "IMDb",
-        "src": "./img/posters/meet_the_robinson.jpg",
+        "src": "./src/posters/meet_the_robinson.jpg",
         "include": true
     },
     {
@@ -311,7 +311,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Supereroi", "Azione", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/megamind.jpg",
+        "src": "./src/posters/megamind.jpg",
         "include": true
     },
     {
@@ -326,7 +326,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Musicale", "Avventura", "Azione", "Commedia"],
         "source": "IMDb",
-        "src": "./img/posters/mulan.jpg",
+        "src": "./src/posters/mulan.jpg",
         "include": true
     },
     {
@@ -341,7 +341,7 @@
         "animation": "Animazione 3D",
         "genres": ["Fantasy", "Avventura", "Commedia", "Azione"],
         "source": "IMDb",
-        "src": "./img/posters/nimona.jpg",
+        "src": "./src/posters/nimona.jpg",
         "include": true
     },
     {
@@ -356,7 +356,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Fantasy", "Azione"],
         "source": "IMDb",
-        "src": "./img/posters/puss_in_boots_the_last_wish.jpg",
+        "src": "./src/posters/puss_in_boots_the_last_wish.jpg",
         "include": true
     },
     {
@@ -371,7 +371,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/ratatouille.jpg",
+        "src": "./src/posters/ratatouille.jpg",
         "include": true
     },
     {
@@ -386,7 +386,7 @@
         "animation": "Animazione 3D",
         "genres": ["Fantasy", "Avventura", "Azione", "Commedia"],
         "source": "IMDb",
-        "src": "./img/posters/rise_of_the_guardians.jpg",
+        "src": "./src/posters/rise_of_the_guardians.jpg",
         "include": true
     },
     {
@@ -401,7 +401,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/robots.jpg",
+        "src": "./src/posters/robots.jpg",
         "include": true
     },
     {
@@ -416,7 +416,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Fantasy", "Avventura", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/sen_to_chihiro_no_kamikakushi.jpg",
+        "src": "./src/posters/sen_to_chihiro_no_kamikakushi.jpg",
         "include": true
     },
     {
@@ -431,7 +431,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Fantasy", "Avventura", "Romantico"],
         "source": "IMDb",
-        "src": "./img/posters/shrek.jpg",
+        "src": "./src/posters/shrek.jpg",
         "include": true
     },
     {
@@ -446,7 +446,7 @@
         "animation": "Live action / CGI",
         "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/sonic_the_hedgehog.jpg",
+        "src": "./src/posters/sonic_the_hedgehog.jpg",
         "include": true
     },
     {
@@ -461,7 +461,7 @@
         "animation": "Live action / CGI",
         "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/sonic_the_hedgehog_2.jpg",
+        "src": "./src/posters/sonic_the_hedgehog_2.jpg",
         "include": true
     },
     {
@@ -476,7 +476,7 @@
         "animation": "Live action / CGI",
         "genres": ["Commedia", "Avventura", "Azione", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/sonic_the_hedgehog_3.jpg",
+        "src": "./src/posters/sonic_the_hedgehog_3.jpg",
         "include": true
     },
     {
@@ -491,7 +491,7 @@
         "animation": "Animazione 3D",
         "genres": ["Azione", "Avventura", "Commedia", "Supereroi"],
         "source": "IMDb",
-        "src": "./img/posters/spider-man_into_the_spider-verse.jpg",
+        "src": "./src/posters/spider-man_into_the_spider-verse.jpg",
         "include": true
     },
     {
@@ -506,7 +506,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Avventura", "Musicale", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/tarzan.jpg",
+        "src": "./src/posters/tarzan.jpg",
         "include": true
     },
     {
@@ -521,7 +521,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Commedia", "Avventura", "Fantasy"],
         "source": "IMDb",
-        "src": "./img/posters/the_emperor_new_groove.jpg",
+        "src": "./src/posters/the_emperor_new_groove.jpg",
         "include": true
     },
     {
@@ -536,7 +536,7 @@
         "animation": "Animazione 3D",
         "genres": ["Azione", "Avventura", "Commedia", "Supereroi"],
         "source": "IMDb",
-        "src": "./img/posters/the_incredibles.jpg",
+        "src": "./src/posters/the_incredibles.jpg",
         "include": true
     },
     {
@@ -551,7 +551,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Fantascienza", "Avventura", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/the_iron_giant.jpg",
+        "src": "./src/posters/the_iron_giant.jpg",
         "include": true
     },
     {
@@ -566,7 +566,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Azione"],
         "source": "IMDb",
-        "src": "./img/posters/the_lego_movie.jpg",
+        "src": "./src/posters/the_lego_movie.jpg",
         "include": false
     },
     {
@@ -581,7 +581,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Musicale", "Avventura", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/the_lion_king.jpg",
+        "src": "./src/posters/the_lion_king.jpg",
         "include": true
     },
     {
@@ -596,7 +596,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Musicale", "Fantasy", "Romantico", "Avventura"],
         "source": "IMDb",
-        "src": "./img/posters/the_little_mermaid.jpg",
+        "src": "./src/posters/the_little_mermaid.jpg",
         "include": true
     },
     {
@@ -611,7 +611,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/the_mitchells_vs_the_machines.jpg",
+        "src": "./src/posters/the_mitchells_vs_the_machines.jpg",
         "include": true
     },
     {
@@ -626,7 +626,7 @@
         "animation": "Stop motion",
         "genres": ["Fantasy", "Musicale", "Commedia"],
         "source": "IMDb",
-        "src": "./img/posters/the_nightmare_before_christmas.jpg",
+        "src": "./src/posters/the_nightmare_before_christmas.jpg",
         "include": true
     },
     {
@@ -641,7 +641,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Musicale", "Fantasy", "Romantico", "Commedia"],
         "source": "IMDb",
-        "src": "./img/posters/the_princess_and_the_frog.jpg",
+        "src": "./src/posters/the_princess_and_the_frog.jpg",
         "include": true
     },
     {
@@ -656,7 +656,7 @@
         "animation": "Animazione tradizionale",
         "genres": ["Commedia", "Avventura", "Musicale"],
         "source": "IMDb",
-        "src": "./img/posters/the_road_to_el_dorado.jpg",
+        "src": "./src/posters/the_road_to_el_dorado.jpg",
         "include": true
     },
     {
@@ -671,7 +671,7 @@
         "animation": "Animazione 3D",
         "genres": ["Avventura", "Drammatico", "Fantascienza"],
         "source": "IMDb",
-        "src": "./img/posters/the_wild_robot.jpg",
+        "src": "./src/posters/the_wild_robot.jpg",
         "include": true
     },
     {
@@ -686,7 +686,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Fantasy"],
         "source": "IMDb",
-        "src": "./img/posters/toy_story.jpg",
+        "src": "./src/posters/toy_story.jpg",
         "include": true
     },
     {
@@ -701,7 +701,7 @@
         "animation": "Animazione tradizionale / CGI",
         "genres": ["Avventura", "Fantascienza", "Fantasy"],
         "source": "IMDb",
-        "src": "./img/posters/treasure_planet.jpg",
+        "src": "./src/posters/treasure_planet.jpg",
         "include": true
     },
     {
@@ -716,7 +716,7 @@
         "animation": "Animazione 3D",
         "genres": ["Musicale", "Commedia", "Fantasy", "Avventura"],
         "source": "IMDb",
-        "src": "./img/posters/trolls.jpg",
+        "src": "./src/posters/trolls.jpg",
         "include": true
     },
     {
@@ -731,7 +731,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Sport"],
         "source": "IMDb",
-        "src": "./img/posters/turbo.jpg",
+        "src": "./src/posters/turbo.jpg",
         "include": true
     },
     {
@@ -746,7 +746,7 @@
         "animation": "Stop motion",
         "genres": ["Commedia", "Avventura", "Mistero"],
         "source": "IMDb",
-        "src": "./img/posters/wallace_and_gromit_the_curse_of_the_were-rabbit.jpg",
+        "src": "./src/posters/wallace_and_gromit_the_curse_of_the_were-rabbit.jpg",
         "include": true
     },
     {
@@ -761,7 +761,7 @@
         "animation": "Animazione 3D",
         "genres": ["Fantascienza", "Avventura", "Romantico"],
         "source": "IMDb",
-        "src": "./img/posters/wall_e.jpg",
+        "src": "./src/posters/wall_e.jpg",
         "include": true
     },
     {
@@ -776,7 +776,7 @@
         "animation": "Animazione 2D",
         "genres": ["Romantico", "Fantasy", "Drammatico"],
         "source": "IMDb",
-        "src": "./img/posters/your_name.jpg",
+        "src": "./src/posters/your_name.jpg",
         "include": true
     },
     {
@@ -791,7 +791,7 @@
         "animation": "Animazione 3D",
         "genres": ["Commedia", "Avventura", "Mistero"],
         "source": "IMDb",
-        "src": "./img/posters/zootopia.jpg",
+        "src": "./src/posters/zootopia.jpg",
         "include": true
     },
     {
@@ -806,7 +806,7 @@
         "animation": "Animazione 3D",
         "genres": ["Avventura", "Animazione", "Commedia"],
         "source": "IMDb",
-        "src": "./img/posters/zootopia_2.jpg",
+        "src": "./src/posters/zootopia_2.jpg",
         "include": true
     }
 ]
